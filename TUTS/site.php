@@ -1,3 +1,6 @@
+<html>
+
+<body>
 <!-- /* $name = "mic";
     $year = 3;
 
@@ -26,11 +29,7 @@
     $sentence[0] = 1;
     echo str_replace("Years", "taon", $sentence);
 
-    */ -->
-
-<html>
-
-<body>
+     -->
 
     <!-- <form action="site.php" method="get">
         Name: <input type="text" name="name">
@@ -38,7 +37,7 @@
         Age: <input type="text" name="age">
         <input type="submit">
     </form>
--->
+
     <form action="site.php" method="get">
         Num 1: <input type="number" name="num1">
         <br>
@@ -47,12 +46,26 @@
     </form>
     <br>
 
-    <?php
-    $sum = $_GET["num1"] + $_GET["num2"];
-    echo $sum;
+    -->
+
+    <form action = "site.php" method="get">
+        Color: <input type="text" name="color"> <br>
+        Plural Noun: <input type="text" name="pluralNoun"> <br>
+        Celebrity: <input type="text" name="celebrity"> <br>
+        <input type="submit">
+    </form> 
+
+    <br>
+
+    <?php 
+    $color = $_GET['color'];
+    $pluralNoun = $_GET['pluralNoun'];
+    $celebrity = $_GET['celebrity'];
+
+    echo "Roses are $color <br>";
+    echo "$pluralNoun are blue <br>";
+    echo "I love $celebrity <br>";
     ?>
-
-
 
 </body>
 
