@@ -47,8 +47,8 @@
     <br>
 
     -->
-
-    <form action = "site.php" method="get">
+    <!-- math lib game -->
+    <!-- <form action = "site.php" method="get">
         Color: <input type="text" name="color"> <br>
         Plural Noun: <input type="text" name="pluralNoun"> <br>
         Celebrity: <input type="text" name="celebrity"> <br>
@@ -65,6 +65,22 @@
     echo "Roses are $color <br>";
     echo "$pluralNoun are blue <br>";
     echo "I love $celebrity <br>";
+    ?> -->
+
+    <!-- URL PARAMETER | GET and POST -->
+    <!-- <form action="site.php" method="post">
+        Name: <input action type="password" name="password">
+            <input action type="submit">
+    </form> -->
+
+    <?php
+        $kaibigans = array("moi","kap","pol","roj");
+        
+        
+        $new_trops = count($kaibigans);
+        for($x = 0; $x < $new_trops; $x++ ){
+            echo $kaibigans[$x] ."<br>";
+        }
     ?>
 
 </body>
