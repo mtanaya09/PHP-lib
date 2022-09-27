@@ -1,7 +1,7 @@
 <html>
 
 <body>
-<!-- /* $name = "mic";
+    <!-- /* $name = "mic";
     $year = 3;
 
     echo "youu $name grind grind muna <br>";
@@ -47,7 +47,11 @@
     <br>
 
     -->
+
+
     <!-- math lib game -->
+
+
     <!-- <form action = "site.php" method="get">
         Color: <input type="text" name="color"> <br>
         Plural Noun: <input type="text" name="pluralNoun"> <br>
@@ -57,7 +61,7 @@
 
     <br>
 
-    <?php 
+    <?php
     $color = $_GET['color'];
     $pluralNoun = $_GET['pluralNoun'];
     $celebrity = $_GET['celebrity'];
@@ -67,21 +71,59 @@
     echo "I love $celebrity <br>";
     ?> -->
 
+
     <!-- URL PARAMETER | GET and POST -->
+
+
+
     <!-- <form action="site.php" method="post">
         Name: <input action type="password" name="password">
-            <input action type="submit">
-    </form> -->
+        <input action type="submit">
+    </form>
 
     <?php
-        $kaibigans = array("moi","kap","pol","roj");
-        
-        
-        $new_trops = count($kaibigans);
-        for($x = 0; $x < $new_trops; $x++ ){
-            echo $kaibigans[$x] ."<br>";
-        }
+    $kaibigans = array("moi", "kap", "pol", "roj");
+
+
+    $new_trops = count($kaibigans);
+    for ($x = 0; $x < $new_trops; $x++) {
+        echo $kaibigans[$x] . "<br>";
+    }
+    ?> -->
+
+
+    <!-- FUNCTIONS -->
+
+
+    <!-- <?php
+            function say($name, $age)
+            {
+                echo "Hello $name your age is $age <br>";
+            }
+
+            say("kel", 10);
+            say("wens", 20);
+            say("mikes", 30);
+            ?> -->
+
+
+    <!-- RETURN STATEMENT -->
+
+
+    <?php
+    function cube($num)
+    {
+        echo "this text will execute <br>";
+        return $num * $num * $num;
+    }
+
+    // $cubeResult = cube(3);
+    // echo $cubeResult; -> or we can use the code below...
+
+    echo cube(4);
     ?>
+
+
 
 </body>
 
